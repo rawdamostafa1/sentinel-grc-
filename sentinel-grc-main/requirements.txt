@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pymongo
+pydantic
+python-dotenv
+pytest
+mongomock
+httpx
+redis
+fakeredis
