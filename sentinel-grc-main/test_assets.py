@@ -108,10 +108,10 @@ def test_external_services_and_website_parts_have_no_address_of_their_own():
 
 def test_the_money_and_data_assets_are_rated_high():
     by_name = {a["name"]: a for a in SEED_ASSETS}
-    for name in ("skyline-web", "Booking & Payment Flow", "MySQL (skyline)", "HAProxy", "Policy Guard & Playbooks"):
+    for name in ("skyline-web", "Booking & Payment Flow", "SQLite (skyline)", "HAProxy", "Policy Guard & Playbooks"):
         assert by_name[name]["criticality"] == 5, name
     assert all(a["data_classification"] == "confidential" for a in SEED_ASSETS if a["name"] in
-               ("Booking & Payment Flow", "MySQL (skyline)", "Audit Log"))
+               ("Booking & Payment Flow", "SQLite (skyline)", "Audit Log"))
 
 
 def test_seed_fills_missing_addresses_on_existing_assets_but_never_overwrites_hand_edits():

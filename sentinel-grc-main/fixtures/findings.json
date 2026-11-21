@@ -192,7 +192,7 @@
   },
   {
     "finding_id": "FND-011",
-    "title": "MySQL port reachable",
+    "title": "Database port reachable",
     "endpoint": "tcp/3306",
     "cwe": "CWE-668",
     "owasp": "A02",

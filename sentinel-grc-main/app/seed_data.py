@@ -25,7 +25,7 @@ SEED_ASSETS = [
          business_service="Flight booking", criticality=4,
          data_classification="confidential", exposure="internet-facing",
          description="Login and session management"),
-    dict(asset_id="AST-004", name="MySQL (skyline)", type="database", owner="Database Team",
+    dict(asset_id="AST-004", name="SQLite (skyline)", type="database", owner="Database Team",
          business_service="Flight booking", criticality=5,
          data_classification="confidential", exposure="internal",
          hostnames=["mysql"], ip_addresses=["172.18.0.11"], description="Bookings, passengers and payments data"),
